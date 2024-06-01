@@ -36,3 +36,257 @@
     transform: rotate(360deg);
   }
 }
+.player-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 350px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #555;
+}
+
+.player-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-title {
+  font-size: 1.2em;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.player-display {
+  width: 100%;
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.player-controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-button {
+  background-color: #1db954;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #1ed760;
+}
+
+.player-timing {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #1db954;
+  transition: width 0.1s;
+}
+
+.audio-element {
+  display: none;
+}
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #1db954;
+}
+
+.error {
+  color: red;
+}
+
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.song-list {
+  list-style-type: none;
+  padding: 0;
+  width: 80%;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  font-weight: bold;
+}
+
+.song-artist {
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.play-button {
+  background-color: #1db954;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #1ed760;
+}
+
+.player-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 300px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #555;
+}
+
+.player-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-title {
+  font-size: 1.2em;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.player-display {
+  width: 100%;
+  background-color: #000;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.player-controls {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.control-button {
+  background-color: #1db954;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #1ed760;
+}
+
+.audio-element {
+  display: none;
+}
