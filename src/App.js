@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchMusicFiles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/music');
+        const response = await axios.get('https://parallel-world-music-app-git-main-chandruyogasekar001s-projects.vercel.app/api/music');
         setMusicFiles(response.data);
         setFilteredMusicFiles(response.data);
         setCurrentTrack(response.data[0]);
